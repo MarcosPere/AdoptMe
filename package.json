@@ -5,6 +5,7 @@
   "main": "src/App.js",
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
+    "@reach/router": "^1.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
@@ -33,7 +34,10 @@
     "url": "git+https://github.com/MarcosPere/AdoptMe.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "bugs": {
     "url": "https://github.com/MarcosPere/AdoptMe/issues",
     "homepage": "https://github.com/MarcosPere/AdoptMe#readme"
