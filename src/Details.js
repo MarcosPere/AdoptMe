@@ -53,13 +53,14 @@ class Details extends React.Component {
           <ThemeContext.Consumer>
             {([theme]) => (
               <button
-                onClick={this.toggleModal}
                 style={{ backgroundColor: theme }}
+                onClick={this.toggleModal}
               >
                 Adopt {name}
               </button>
             )}
           </ThemeContext.Consumer>
+          <p>{description}</p>
           {showModal ? (
             <Modal>
               <h1>Would you like to adopt {name}?</h1>
@@ -74,6 +75,7 @@ class Details extends React.Component {
     );
   }
 }
+
 export default function DetailsErrorBoundary(props) {
   return (
     <ErrorBoundary>
